@@ -6,11 +6,56 @@
     android:layout_height="match_parent"
     tools:context="com.example.abyandafa.cameraandgps.MainActivity">
 
-    <Button
-        android:id="@+id/toPhotoActivty"
-        android:layout_centerInParent="true"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Photo"/>
+        android:orientation="vertical"
+        android:id="@+id/center"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/toPhotoActivty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Photo"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/location"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:text="get location"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center"
+        android:layout_centerHorizontal="true"
+        android:text="Latitude: "/>
+    <TextView
+        android:layout_below="@+id/latitude"
+        android:text="longitude"
+        android:id="@+id/longitude"
+        android:layout_centerHorizontal="true"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address : "
+        android:layout_below="@id/longitude"
+        android:id="@+id/address"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:id="@+id/address_value"
+        android:layout_centerHorizontal="true"
+        android:text="inialamat inialamat inialamant"/>
 
 </RelativeLayout>
